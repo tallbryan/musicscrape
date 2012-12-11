@@ -1,0 +1,184 @@
+<h2 class="sitesection">Recommended Music Events</h2>
+  <ul class="recommend_list">
+
+
+    <li>
+      
+      <a href="http://www.thestranger.com/seattle/Event?event=14551159&amp;ms">
+        The Racer Sessions
+      </a><br/>
+      Cafe Racer<br />
+      
+      
+
+      
+       Every Sun
+      
+      <br />
+      21+
+    </li>
+
+
+
+    <li>
+      
+      <a href="http://www.thestranger.com/seattle/Event?event=10114814&amp;ms">
+        Michael Shrieve's Spellbinder
+      </a><br/>
+      The White Rabbit<br />
+      
+      
+
+      
+       Every Mon
+      
+      <br />$6
+      21+
+    </li>
+
+
+
+    <li>
+      
+      <a href="http://www.thestranger.com/seattle/Event?event=14996435&amp;ms">
+        Bukkake Bloodbath, Grim Ritual, Rye Wolves, Reficul and Panzergod
+      </a><br/>
+      2 Bit Saloon<br />
+      
+      
+
+      
+        Mon Dec 10
+      
+      <br />$8/$10
+      21+
+    </li>
+
+
+
+    <li>
+      
+      <a href="http://www.thestranger.com/seattle/Event?event=15328258&amp;ms">
+        Grave Babies, Baby Guns and Guests
+      </a><br/>
+      Crocodile<br />
+      
+      
+
+      
+        Mon Dec 10
+      
+      <br />$5
+      All Ages
+    </li>
+
+
+
+    <li>
+      
+      <a href="http://www.thestranger.com/seattle/Event?event=15285886&amp;ms">
+        Nouela, Social Studies and Detective Agency
+      </a><br/>
+      Chop Suey<br />
+      
+      
+
+      
+        Mon Dec 10
+      
+      <br />$8
+      21+
+    </li>
+
+
+
+    <li>
+      
+      <a href="http://www.thestranger.com/seattle/Event?event=14778063&amp;ms">
+        Ty Segall and Night Beats
+      </a><br/>
+      Neumos<br />
+      
+      
+
+      
+        Tue Dec 11
+      
+      <br />$12
+      21+
+    </li>
+
+
+
+    <li>
+      
+      <a href="http://www.thestranger.com/seattle/Event?event=15476862&amp;ms">
+        Witches Titties, Gaydolf & Golden Showers, Jackie Hell and Guests
+      </a><br/>
+      Neumos<br />
+      
+      
+
+      
+        Wed Dec 12
+      
+      <br />
+      21+
+    </li>
+
+
+
+    <li>
+      
+      <a href="http://www.thestranger.com/seattle/Event?event=14778082&amp;ms">
+        Kreayshawn, Rye Rye, Honey Cocaine and Chippy Nonstop
+      </a><br/>
+      Neumos<br />
+      
+      
+
+      
+        Wed Dec 12
+      
+      <br />$20
+      All Ages
+    </li>
+
+
+
+    <li>
+      
+      <a href="http://www.thestranger.com/seattle/Event?event=14837484&amp;ms">
+        Corrosion of Conformity
+      </a><br/>
+      Crocodile<br />
+      
+      
+
+      
+        Wed Dec 12
+      
+      <br />$18
+      All Ages
+    </li>
+
+
+
+    <li>
+      
+      <a href="http://www.thestranger.com/seattle/Event?event=15285888&amp;ms">
+        Mellowhype, Trash Talk and Guests
+      </a><br/>
+      Chop Suey<br />
+      
+      
+
+      
+        Thu Dec 13
+      
+      <br />$15
+      All Ages
+    </li>
+
+
+    <li class=
