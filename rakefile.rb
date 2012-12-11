@@ -2,8 +2,7 @@
 
 require 'rubygems'
 require 'bundler'
-require 'gcal4ruby'
-require 'rest-client'
+
 
 begin
   Bundler.setup(:default, :development)

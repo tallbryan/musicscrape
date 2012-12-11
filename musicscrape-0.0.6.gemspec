@@ -33,6 +33,7 @@ Gem::Specification.new do |s|
     "musicscrape-0.0.3.gem",
     "musicscrape-0.0.4.gem",
     "musicscrape-0.0.5.gemspec",
+    "musicscrape-0.0.6.gemspec",
     "musicscrape.gemspec",
     "rakefile.rb"
   ]
