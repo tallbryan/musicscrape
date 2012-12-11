@@ -5,13 +5,15 @@ require 'rest-client'
 
 
 class Scrape
-  #@url='http://www.thestranger.com/seattle/Music' #The url for the web page we want
+  #Scrape is meant to parse www.thestranger.com/music and pull out info on the recommended shows
+  #initialize with source_type = :web and url = "http://www.thestranger.com/music"
   def initialize(source_type,url)
     @source_type = source_type
     @url = url
   end
 
   def load_page
+    #Uses RestClient to get the html
     if @source_type == :web then
       (RestClient.get(@url))
     else
@@ -21,40 +23,18 @@ class Scrape
 
   def remove_excess(text_in)
     #removes everthing except the recommended events section
-    #text_in = text_in.partition("class=\"recommend_list\"").drop(1).join
     text_in = text_in.partition("<h2 class=\"sitesection\">Recommended Music Events</h2>").drop(1).join
     text_in.partition("<li class=")[0..1].join.strip
   end
   
-  #puts (RestClient.get(@path))
   def open_local
+    #opens a local file for testing
     open("#{File.dirname(__FILE__)}/stranger.txt", &:read)
   end
   
-  def get_event(page)
-    puts page
-    @music_text = page
-    @music_text = @music_text.partition(/\bevent=\b\d*.*/)[2]
-    
-    my_array = @music_text.partition('</a><br/>')
-    #use the first item of the array minus leading and trailing white space as event title
-    event_hash = {}
-    event_hash[:title] = my_array[0]
-    @music_text = my_array[2].strip
-    
-    #now partition it at <br /> and the first element is venue
-    my_array = @music_text.partition('<br />')
-    event_hash[:venue] = my_array[0]
-    @music_text = my_array[2].strip
-    
-    event_hash
-  end
-  def get_field(id)
-    #gets one field from the page
-    
-    
-  end
   def get_events(text_in)
+    #parses the html after it has been pared down and returns an array of hashes containing the data
+    #returns [[:title=> "", :venue=>"", :date=>"", :details=>""], ...]
     @music_text = text_in
     #while there are still events left do this
     event_array = []
@@ -75,22 +55,6 @@ class Scrape
     event_array
   end
   
-  def count_words(s_s)
-    h = Hash.new(0)
-    s_s.scan("class=\"recommend_list\"") do |w|
-      h[w] += 1
-    end
-    h
-  end
-  
-end
-class Tester
-  def testmethod
-    scrape = Scrape.new(:local,"x")
-    x = scrape.load_page
-    x = scrape.remove_excess(x)
-    scrape.get_event(x)
-  end
 end
 
 class Google
@@ -143,7 +107,4 @@ class Google
         
   end
 
-end
-
-class GetUserInfo
 end
