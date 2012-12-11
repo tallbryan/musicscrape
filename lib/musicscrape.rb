@@ -29,6 +29,7 @@ class Scrape
       puts lst[:details]
       puts "\n"
   end
+end
   
   def get_music_listings
     #Gives you an array of hashes
