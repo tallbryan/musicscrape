@@ -1,17 +1,29 @@
 require 'rubygems'
 require 'rest-client'
 #This gem goes to www.thestranger.com/seattle/Music and scrapes data for all the recommended concerts. 
-#The intent is to have it put them on your google calendar but it hasn't gotten that far yet. 
+#The one method you need is get_music_listings which returns an array of hashes of the form
+#[[:title=> "", :venue=>"", :date=>"", :details=>""], ...]
+#how to use this gem:
+#scrape = Scrape.new
+#scrape.get_music_listings
+#that is all. 
 
 
 class Scrape
   #Scrape is meant to parse www.thestranger.com/music and pull out info on the recommended shows
   #initialize with source_type = :web and url = "http://www.thestranger.com/music"
-  def initialize(source_type,url)
+  def initialize(source_type = :web)
     @source_type = source_type
-    @url = url
+    @url="http://www.thestranger.com/seattle/Music"
   end
-
+  
+  def get_music_listings
+    #This is the one method you need to use
+    @scrape = Scrape.new(:web)
+    @pruned_page = @scrape.remove_excess(@scrape.load_page)
+    @scrape.get_events(@pruned_page) #returns an array of hashes
+  end
+  
   def load_page
     #Uses RestClient to get the html
     if @source_type == :web then
@@ -58,6 +70,7 @@ class Scrape
 end
 
 class Google
+  #the plan is to make it add the events to your google calendar. Not yet Functional.
   attr_writer :password
   attr_writer :user
   attr_writer :title
