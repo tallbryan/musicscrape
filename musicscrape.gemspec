@@ -9,4 +9,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://rubygems.org/gems/musicscrape'
   s.files       = ["lib/musicscrape.rb"]
   s.executables << 'musicscrape'
+  s.add_runtime_dependency "restclient"
+  s.add_runtime_dependency "gcal4ruby"
+  s.add_runtime_dependency "rubygems"
 end
