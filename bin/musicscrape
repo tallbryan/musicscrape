@@ -1,4 +1,11 @@
 #!/usr/bin/env ruby
 
-puts "What does this gem do, anyway?"
-puts ARGV[0]
+require 'musicscrape'
+@scrape = Scrape.new
+@scrape.get_music_listings.each do |lst|
+  puts lst[:title]
+  puts lst[:venue]
+  puts lst[:date]
+  puts lst[:details]
+  puts "\n"
+end

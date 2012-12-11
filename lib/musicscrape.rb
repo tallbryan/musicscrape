@@ -1,5 +1,7 @@
 require 'rubygems'
 require 'rest-client'
+#call musicscrape with no arguments from the command line for output
+
 #This gem goes to www.thestranger.com/seattle/Music and scrapes data for all the recommended concerts. 
 #The one method you need is get_music_listings which returns an array of hashes of the form
 #[[:title=> "", :venue=>"", :date=>"", :details=>""], ...]
