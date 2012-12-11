@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "musicscrape"
-  s.version = "0.0.9"
+  s.version = "0.0.10"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["tallbryan"]
@@ -36,6 +36,7 @@ Gem::Specification.new do |s|
     "musicscrape-0.0.6.gem",
     "musicscrape-0.0.7.gem",
     "musicscrape-0.0.8.gem",
+    "musicscrape-0.0.9.gem",
     "musicscrape.gemspec",
     "rakefile.rb"
   ]
