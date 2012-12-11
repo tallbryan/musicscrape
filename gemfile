@@ -11,4 +11,5 @@ group :development do
   gem "jeweler", "~> 1.8.4"
   gem "cucumber"
   gem "rest-client"
+  gem "gcal4ruby"
 end

@@ -2,6 +2,9 @@
 
 require 'rubygems'
 require 'bundler'
+require 'gcal4ruby'
+require 'rest-client'
+
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e
@@ -14,7 +17,7 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "musicscrape-0.0.5"
+  gem.name = "musicscrape-0.0.6"
   gem.homepage = "http://github.com/tallbryan/musicscrape"
   gem.license = "BOB"
   gem.summary = "scrape this weeks shows off the stranger"
