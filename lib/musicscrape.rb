@@ -2,6 +2,7 @@ require 'rubygems'
 require 'rest-client'
 #call musicscrape with no arguments from the command line for output
 
+
 #This gem goes to www.thestranger.com/seattle/Music and scrapes data for all the recommended concerts. 
 #The one method you need is get_music_listings which returns an array of hashes of the form
 #[[:title=> "", :venue=>"", :date=>"", :details=>""], ...]
@@ -18,9 +19,19 @@ class Scrape
     @source_type = source_type
     @url="http://www.thestranger.com/seattle/Music"
   end
+  def formatted_output
+    #gives you the same output you get from the command line
+    @scrape = Scrape.new
+    @scrape.get_music_listings.each do |lst|
+      puts lst[:title]
+      puts lst[:venue]
+      puts lst[:date]
+      puts lst[:details]
+      puts "\n"
+  end
   
   def get_music_listings
-    #This is the one method you need to use
+    #Gives you an array of hashes
     @scrape = Scrape.new(:web)
     @pruned_page = @scrape.remove_excess(@scrape.load_page)
     @scrape.get_events(@pruned_page) #returns an array of hashes
